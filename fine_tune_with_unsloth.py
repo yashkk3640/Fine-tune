@@ -167,8 +167,8 @@ outputs = model.generate(**inputs, max_new_tokens = 500, use_cache = True)
 print(tokenizer.batch_decode(outputs))
 
 
-model.save_pretrained("/trained_model") # drive
-tokenizer.save_pretrained("/trained_model")
+model.save_pretrained("./trained_model") # drive
+tokenizer.save_pretrained("./trained_model")
 # model.push_to_hub("your_name/lora_model", token = "...") # Online saving
 # tokenizer.push_to_hub("your_name/lora_model", token = "...") # Online saving
 
